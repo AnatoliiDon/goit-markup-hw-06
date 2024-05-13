@@ -51,6 +51,7 @@ body {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 16px;
 }
 
 .logo-color {
@@ -75,7 +76,7 @@ body {
 }
 
 .section {
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 
 /* ================= HEADER STYLES ================= */
@@ -376,6 +377,18 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 1157px) {
+  .hero-section {
+    padding: 112px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding: 72px 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-section {
     max-width: 768px;
@@ -389,7 +402,6 @@ body {
   .main-title {
     font-size: 56px;
     line-height: 1.07;
-    margin-top: 112px;
     width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -416,9 +428,6 @@ body {
       ),
       url(../images/people-office.jpg);
   }
-  .section {
-    margin-bottom: 120px;
-  }
   .order-button:hover,
   .order-button:focus {
     background-color: #404bbf;
@@ -439,10 +448,6 @@ body {
 
 .benefits-item-icon {
   display: none;
-}
-
-.benefits-item:not(:last-child) {
-  margin-bottom: 72px;
 }
 
 .benefits-item-title {
@@ -475,6 +480,12 @@ body {
 
   .benefits-item {
     width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-item:not(:last-child) {
+    margin-bottom: 72px;
   }
 }
 
@@ -516,8 +527,11 @@ body {
 }
 
 /* ================= TEAM STYLES ======================= */
-.team-container {
+.team-section {
   background-color: #f4f4fd;
+}
+
+.team-container {
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -851,11 +865,16 @@ body {
 }
 
 .subscribe-icon {
-  position: absolute;
-  bottom: 8px;
-  right: 76px;
   fill: #ffffff;
-  margin-left: 16px;
+}
+
+@media screen and (max-width: 1157px) {
+  .footer-container {
+    margin-right: 0;
+  }
+  .footer-wrap {
+    margin-bottom: 72px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -867,14 +886,11 @@ body {
     text-align: center;
   }
   .footer-logo {
-    margin-left: 102px;
-    margin-right: 102px;
+    display: block;
+    text-align: center;
   }
   .link-container {
-    max-width: 208px;
     margin-bottom: 72px;
-    margin-left: 56px;
-    margin-right: 56px;
   }
   .footer-container {
     margin-bottom: 72px;
@@ -890,12 +906,17 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .social-list-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer-wrap {
     display: flex;
-    margin-bottom: 72px;
   }
 
   .page-footer {
@@ -912,20 +933,9 @@ body {
     margin-left: 108px;
   }
 
-  .subscribe-icon {
-    bottom: 8px;
-    right: 165px;
-  }
-
   .link-container {
     margin-left: 0;
     padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 1157px) {
-  .footer-container {
-    margin-right: 0;
   }
 }
 
@@ -1059,13 +1069,6 @@ body {
     position: relative;
     display: flex;
     gap: 24px;
-  }
-  .subscribe-icon {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    fill: #ffffff;
-    margin-left: 16px;
   }
 
   .subscribe-button:hover,
