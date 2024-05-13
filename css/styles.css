@@ -58,6 +58,10 @@ body {
   color: #2e2f42;
 }
 
+.section {
+  padding: 96px 0;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -69,14 +73,14 @@ body {
   .container {
     max-width: 1158px;
   }
+
+  .section {
+    padding: 120px 0;
+  }
 }
 
 .special-color {
   color: #404bbf;
-}
-
-.section {
-  padding: 96px 0;
 }
 
 /* ================= HEADER STYLES ================= */
@@ -529,11 +533,6 @@ body {
 /* ================= TEAM STYLES ======================= */
 .team-section {
   background-color: #f4f4fd;
-}
-
-.team-container {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .section-title {
